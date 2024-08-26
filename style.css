@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FF4500;  /* Set the whole background to orange */
+}
+
+.hero-section {
+    background-color: #FF4500; /* Ensure the hero section has the same orange background */
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    padding: 20px;
+}
+
+.hero-section h1, .hero-section p {
+    margin-bottom: 30px;
+    padding: 0 20px; /* Adding padding for better readability */
+}
+
+.team-members {
+    margin-top: 40px; /* Lowering the slider */
+}
+
+.member {
+    margin: 0 10px; /* Reduce margin between members */
+}
+
+.member img {
+    width: 100px; /* Reduce the size of the images */
+    height: 100px;
+    margin-bottom: 5px; /* Reduce the bottom margin */
+    border: 2px solid white; /* Reduce the border size */
+    border-radius: 50%; /* Making images circular */
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    .hero-section {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .team-members {
+        margin-top: 30px;
+    }
+
+    .member img {
+        width: 80px; /* Smaller images on tablets */
+        height: 80px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .hero-section {
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .team-members {
+        margin-top: 20px; /* Adjust margin for mobile */
+    }
+
+    .member {
+        margin: 5px; /* Less margin between members */
+    }
+
+    .member img {
+        width: 70px; /* Smaller images on mobile */
+        height: 70px;
+    }
+
+    .hero-section h1 {
+        margin-bottom: 20px;
+        font-size: 18px; /* Adjusting font size for mobile */
+    }
+    .hero-section p {
+        margin-bottom: 20px;
+        font-size: 10px; /* Adjusting font size for mobile */
+    }
+    .social-links a {
+        margin: 0 5px; /* Reduce spacing on mobile */
+    }
+}
